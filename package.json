@@ -13,6 +13,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "^7.7.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.0.5",
     "serverless-dotenv-plugin": "3.0.0",
     "serverless-offline": "6.5.0",
     "serverless-plugin-optimize": "4.1.4-rc.1",
