@@ -1,0 +1,52 @@
+service: lambda-starter
+
+# Create an optimized package for the functions 
+package:
+  individually: true
+
+plugins:
+  - serverless-offline
+  - serverless-stage-manager
+  - serverless-plugin-optimize
+  - serverless-plugin-warmup
+  - serverless-dotenv-plugin
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  memorySize: 768
+  timeout: 15
+  stage: ${opt:stage,'dev'}
+  region: us-east-1
+  environment:
+    TEST_ENV_VAR: ${env:TEST_ENV_VAR}
+  iamRoleStatements: # IAM Role Permissions
+    - Effect: "Allow"
+      Action:
+        - "logs:CreateLogGroup"
+        - "logs:CreateLogStream"
+        - "logs:PutLogEvents"
+      Resource: "*"
+    - Effect: Allow
+      Action:
+        - lambda:InvokeFunction
+      Resource: "*"
+
+# Custom variables
+custom:
+  stages: # for stage manager
+    - dev
+    - prod
+
+# Functions
+functions:
+  router:
+    warmup:
+      enabled: prod
+    name: ${self:service}-${self:provider.stage}
+    handler: handler.router
+    timeout: 15
+    events:
+      - http:
+          path: 'v1/{proxy+}'
+          method: any
