@@ -29,6 +29,7 @@
     "dotenv": "8.2.0",
     "lambda-api": "0.10.6",
     "lodash": "4.17.19",
+    "serverless": "^1.80.0",
     "serverless-stage-manager": "1.0.5"
   }
 }
