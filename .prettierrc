@@ -3,7 +3,6 @@
   "printWidth": 80,
   "proseWrap": "always",
   "tabWidth": 2,
-  "requireConfig": false,
   "useTabs": false,
   "trailingComma": "all",
   "bracketSpacing": true,
