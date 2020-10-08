@@ -16,25 +16,25 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "7.9.0",
+    "eslint": "7.10.0",
     "eslint-config-airbnb": "18.2.0",
-    "eslint-config-prettier": "6.11.0",
+    "eslint-config-prettier": "6.12.0",
     "eslint-plugin-prettier": "3.1.4",
-    "npm-check-updates": "9.0.1",
+    "npm-check-updates": "9.0.4",
     "prettier": "2.1.2",
     "pretty-quick": "3.0.2",
     "serverless-dotenv-plugin": "3.0.0",
-    "serverless-offline": "6.7.0",
+    "serverless-offline": "6.8.0",
     "serverless-plugin-optimize": "4.1.4-rc.1",
     "serverless-plugin-warmup": "4.9.0"
   },
   "dependencies": {
-    "aws-sdk": "2.756.0",
-    "dayjs": "1.8.36",
+    "aws-sdk": "2.769.0",
+    "dayjs": "1.9.1",
     "dotenv": "8.2.0",
     "lambda-api": "0.10.6",
     "lodash": "4.17.20",
-    "serverless": "2.1.1",
+    "serverless": "2.5.0",
     "serverless-stage-manager": "1.0.5"
   }
 }
