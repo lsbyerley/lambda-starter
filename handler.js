@@ -38,7 +38,7 @@ app.use((req, res, next) => {
 // Build API routes
 //----------------------------------------------------------------------------//
 
-app.get('/example-route', async (req, res) => {
+app.get('/test', async (req, res) => {
   const example = await exampleFunc();
 
   // Send the response

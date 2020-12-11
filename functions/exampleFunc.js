@@ -3,12 +3,15 @@ const { TEST_ENV_VAR } = process.env;
 
 const exampleFunc = async () => {
   try {
-    console.log('TEST ENV VAR: ', TEST_ENV_VAR);
     const response = await fetch('https://api.ipify.org?format=json');
-    const json = await response.json();
+    const data = await response.json();
 
-    return json;
+    return {
+      testEnvVar: TEST_ENV_VAR,
+      ip: data.ip,
+    };
   } catch (err) {
+    console.error('exampleFunc error: ', err);
     return err;
   }
 };
