@@ -3,7 +3,7 @@
 // Require and init API router module
 const app = require('lambda-api')({ version: 'v1.0', base: 'v1' });
 const _get = require('lodash/get');
-const exampleFunc = require('./functions/exampleFunc');
+const ExampleFunc = require('./functions/ExampleFunc');
 
 //----------------------------------------------------------------------------//
 // Define Middleware
@@ -39,7 +39,7 @@ app.use((req, res, next) => {
 //----------------------------------------------------------------------------//
 
 app.get('/test', async (req, res) => {
-  const example = await exampleFunc();
+  const example = await ExampleFunc();
 
   // Send the response
   res.status(200).json(example);
