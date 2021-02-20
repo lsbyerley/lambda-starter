@@ -4,7 +4,7 @@
   "description": "",
   "main": "handler.js",
   "scripts": {
-    "start": "sls offline start",
+    "dev": "sls offline start",
     "deploy": "sls deploy",
     "deployProd": "sls deploy -s prod",
     "deployFunctions": "sls deploy function --function router",
@@ -17,25 +17,25 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "7.17.0",
+    "eslint": "7.20.0",
     "eslint-config-airbnb": "18.2.1",
-    "eslint-config-prettier": "7.1.0",
-    "eslint-plugin-prettier": "3.3.0",
-    "npm-check-updates": "10.2.5",
+    "eslint-config-prettier": "7.2.0",
+    "eslint-plugin-prettier": "3.3.1",
+    "npm-check-updates": "11.1.4",
     "prettier": "2.2.1",
     "pretty-quick": "3.1.0",
-    "serverless-dotenv-plugin": "3.1.0",
+    "serverless-dotenv-plugin": "3.5.1",
     "serverless-offline": "6.8.0",
     "serverless-plugin-optimize": "4.1.4-rc.1",
-    "serverless-plugin-warmup": "4.9.0"
+    "serverless-plugin-warmup": "5.2.0"
   },
   "dependencies": {
-    "aws-sdk": "2.820.0",
-    "dayjs": "1.10.1",
+    "aws-sdk": "2.848.0",
+    "dayjs": "1.10.4",
     "dotenv": "8.2.0",
     "lambda-api": "0.10.6",
-    "lodash": "4.17.20",
-    "serverless": "2.17.0",
+    "lodash": "4.17.21",
+    "serverless": "2.25.2",
     "serverless-stage-manager": "1.0.5"
   }
 }

@@ -1,6 +1,6 @@
 service: lambda-starter
 
-# Create an optimized package for the functions 
+# Create an optimized package for the functions
 package:
   individually: true
 
@@ -21,16 +21,16 @@ provider:
   environment:
     TEST_ENV_VAR: ${env:TEST_ENV_VAR}
   iamRoleStatements: # IAM Role Permissions
-    - Effect: "Allow"
+    - Effect: 'Allow'
       Action:
-        - "logs:CreateLogGroup"
-        - "logs:CreateLogStream"
-        - "logs:PutLogEvents"
-      Resource: "*"
+        - 'logs:CreateLogGroup'
+        - 'logs:CreateLogStream'
+        - 'logs:PutLogEvents'
+      Resource: '*'
     - Effect: Allow
       Action:
         - lambda:InvokeFunction
-      Resource: "*"
+      Resource: '*'
 
 # Custom variables
 custom:
