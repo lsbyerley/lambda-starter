@@ -11,7 +11,7 @@
     "deployFunctionsProd": "sls deploy -s prod function --function router",
     "format-staged": "pretty-quick",
     "format-all": "prettier --write functions/ && prettier --write handler.js",
-    "package:update:check": "npm-check-updates -u",
+    "package:update:check": "npm-check-updates",
     "package:update:install": "npm-check-updates -u; npm install"
   },
   "author": "",
