@@ -11,8 +11,8 @@
     "deployFunctionsProd": "sls deploy -s prod function --function router",
     "format-staged": "pretty-quick",
     "format-all": "prettier --write functions/ && prettier --write handler.js",
-    "package:update:check": "npm-check-updates -u",
-    "package:update:install": "npm-check-updates -u; npm install"
+    "package:update:check": "ncu --target minor",
+    "package:update:install": "ncu --upgrade --target minor; npm install"
   },
   "author": "",
   "license": "ISC",
